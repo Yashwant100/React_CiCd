@@ -1,16 +1,17 @@
-name : "Sample React Ci Pipeline"
-on :
- push : 
-  branches :
-   - ["main"]
-   - ["master"]
+name: "Sample React Ci Pipeline"
+on:
+  push:
+    branches:
+      - ["main"]
+      - ["master"]
 
-jobs : 
- Build-And-Test :
-  runs-on : ubuntu-latest
-   steps :
-    - name : "setup nodejs"
-    uses : actions/setup-node@v4
-    with :
-     node-version: '21'
+jobs:
+  Build-And-Test:
+    runs-on: ubuntu-latest
+steps:
+  - name: "setup nodejs"
+    uses: actions/setup-node@v4
+    with:
+      node-version: "21"
+
 
