@@ -1,7 +1,9 @@
 name: "Sample React Ci Pipeline"
 on:
   push:
-    branches: ["master"]
+    branches: 
+      ["master"]
+      ["main"]
 
 jobs:
   Build-And-Test:
