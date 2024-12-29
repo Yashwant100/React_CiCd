@@ -1,5 +1,5 @@
 name: "Sample React Ci Pipeline"
-"on":
+on:
   push:
     branches:
       - ["main"]
