@@ -8,12 +8,10 @@ name: "Sample React Ci Pipeline"
 jobs:
   Build-And-Test:
     runs-on: ubuntu-latest
-  steps:
-    - name: "setup nodejs"
-      uses: actions/setup-node@v4
-      with:
-        node-version: "21"
-
+    steps:
+      - name: "setup nodejs"
+      - uses: actions/setup-node@v4
+        with: node-version:'21'
 
 
 
